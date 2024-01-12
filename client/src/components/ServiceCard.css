@@ -1,0 +1,52 @@
+.card{width: 270px;
+margin: 20px;
+height: 350px;
+border-radius: 12px;
+box-shadow: -1px 3px 26px 5px rgba(0,0,0,0.52);
+-webkit-box-shadow: -1px 3px 26px 5px rgba(0,0,0,0.52);
+-moz-box-shadow: -1px 3px 26px 5px rgba(0,0,0,0.52);
+background-color: #ffc5c4;
+    text-align: center}
+
+.card img{
+    max-width: 270px;
+    max-height: 179px;
+    min-width: 270px;
+    min-height: 179px;
+    border-radius: 12px 12px 0 0;
+}
+.card:hover {
+    background-color: white;
+    color: #511030;
+}
+.card:hover img {
+    opacity: 0.6;
+}
+.card h3 {
+    margin-top: 16px;
+    min-height: 60px;
+    max-height: 60px;
+}
+.servicebox{
+    display: flex;
+    justify-content: space-around;
+}
+.imgmodal img {
+    width: 410px;
+    height: 100%;
+}
+.modal-body h5,.modal-body h3 {
+    margin: 0;
+    padding: 0;
+}
+.modal-title h3 {
+    margin: 0;
+    padding: 0;
+}
+.modaal {
+    display: flex;
+}
+input.tel.form-control {
+    width: 80%;
+    margin-left: 11px;
+}
