@@ -28,9 +28,9 @@ export const deletereservation = createAsyncThunk("reservation/delete", async (i
   }
 });
 
-export const editreservation = createAsyncThunk("reservation/edit", async ({ id, edit }) => {
+export const editreservation = createAsyncThunk("reservation/edit", async ({ id, editres }) => {
   try {
-    let result = axios.put(`http://localhost:5000/reservation/${id}`, edit);
+    let result = axios.put(`http://localhost:5000/reservation/${id}`, editres);
     return result;
   } catch (error) {
     console.log(error);

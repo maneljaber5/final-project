@@ -21,6 +21,8 @@ import Nails from "./components/services/Nails";
 import Makeup from "./components/services/Makeup";
 import Massage from "./components/services/Massage";
 import { getreservation } from "./JS/reservationslice";
+import Admin from "./components/admin/Admin";
+
 
 function App() {
   const isAuth = localStorage.getItem("token");
@@ -50,11 +52,13 @@ function App() {
         <Route path="/gallery" element={ <Gallery/> } />
         <Route path="/contact" element={ <Contact/> } />
         <Route path="/about" element={ <About/> } />
+        {/* <Route path="/dashboard" element={ <Dashboard/> } /> */}
         <Route path="/hair" element={ <Hair ping={ping} setping={setping}/> } />
         <Route path="/nails" element={ <Nails ping={ping} setping={setping}/> } />
         <Route path="/makeup" element={ <Makeup ping={ping} setping={setping}/> } />
         <Route path="/Massage" element={ <Massage ping={ping} setping={setping}/> } />
         <Route path="/login" element={ <Login/> } />
+        <Route path="/admin" element={ <Admin ping={ping} setping={setping} /> } />
    
       </Routes>
       <Footer />

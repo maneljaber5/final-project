@@ -28,9 +28,9 @@ export const deleteservice = createAsyncThunk("service/delete", async (id) => {
   }
 });
 
-export const editservice = createAsyncThunk("service/edit", async ({ id, edit }) => {
+export const editservice = createAsyncThunk("service/edit", async ({ id, editserv }) => {
   try {
-    let result = axios.put(`http://localhost:5000/service/${id}`, edit);
+    let result = axios.put(`http://localhost:5000/service/${id}`, editserv);
     return result;
   } catch (error) {
     console.log(error);

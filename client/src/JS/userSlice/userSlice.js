@@ -35,6 +35,7 @@ export const userCurrent = createAsyncThunk("user/current", async () => {
 const initialState = {
   user: null,
   status: null,
+  userList:null,
 };
 export const getuser = createAsyncThunk("user/get", async (req, res) => {
   try {

@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { addreservation } from '../../JS/reservationslice';
 import { useDispatch, useSelector } from 'react-redux';
+import Swal from 'sweetalert2'
 
 function CardDetails({service,ping,setping}) {
     const [show, setShow] = useState(false);
@@ -46,8 +47,15 @@ const dispatch=useDispatch()
         <Modal.Body>Enter your favorite date :</Modal.Body>
         <Form.Control type="date" className='tel' onChange={(e)=>setnewreservation({...newreservation, date:e.target.value})} />
         <Modal.Footer>
-        <button variant="primary" onClick={()=>{dispatch(addreservation(newreservation));setping(!ping)}}>
+        <button variant="primary" onClick={()=>{dispatch(addreservation(newreservation));setping(!ping);    Swal.fire({
+        title: "Good job!",
+        text: "thanks for your reservation , will be call to cofirmation soon!",
+        icon: "success"
+      });}
+  
+      } >
             confirmed
+           
           </button>
           <button variant="secondary" onClick={handleClose}>
             Close

@@ -1,0 +1,43 @@
+body .admin  {
+    background-color: #463e3e !important;
+  
+   
+
+}
+.admin {
+    display: flex;
+    flex-wrap: wrap;
+    JUSTIFY-CONTENT: center;
+}
+.servicess, .users, .reservations {
+    background: #6a1f3f;
+    border-radius: 10px;
+    margin: 21px 18px;
+    width:75%;
+    text-align: center;
+}
+.servicess h3, .users h3, .reservations h3 {
+    color: #ff9694;
+    
+}
+.servicess table, .users table, .reservations table {
+    background: white;
+}
+.admin .menu {
+    background: #6a1f3f;
+    width: 150px;
+    height: 400px;
+    margin-top: 25px;
+    padding: 24px 10px;
+    position: absolute;
+    left: 1%;
+}
+.adm {
+    font-size: 21px;
+    color: #ffa2d0;
+   
+    font-family: Dancing Script !important;
+}
+.menu button {
+    margin: 7px 0px;
+}
